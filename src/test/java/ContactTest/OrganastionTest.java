@@ -9,4 +9,10 @@ public class OrganastionTest
    {
 	   System.out.println(" Organation module");
    }
+	
+	@Test
+	   public void org1()
+	   {
+		   System.out.println(" Organation module");
+	   }
 }
