@@ -14,19 +14,7 @@ public class ReadDataTest
 	{
 		String BROWSER = System.getProperty("browser");
 		System.out.println("browser----->"+BROWSER);
-		
-		WebDriver driver = null;
-		if(BROWSER.equalsIgnoreCase("chrome"))
-		{
-			driver = new ChromeDriver();
-		}
-		else if(BROWSER.equalsIgnoreCase("firefox"))
-		{
-			driver = new FirefoxDriver();
-		}
-		driver.get("http://localhost:8888");
-		
-		
+			
 		String URL = System.getProperty("url");
 		System.out.println(URL);
 	}
