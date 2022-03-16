@@ -1,5 +1,10 @@
 package ContactTest;
 
+import javax.sql.rowset.WebRowSet;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 public class ReadDataTest 
@@ -9,6 +14,16 @@ public class ReadDataTest
 	{
 		String BROWSER = System.getProperty("browser");
 		System.out.println(BROWSER);
+		
+		WebDriver driver = null;
+		if(BROWSER.equalsIgnoreCase("chrome"))
+		{
+			driver = new ChromeDriver();
+		}
+		else if(BROWSER.equalsIgnoreCase("firefox"))
+		{
+			driver = new FirefoxDriver();
+		}
 		
 		
 		String URL = System.getProperty("url");
