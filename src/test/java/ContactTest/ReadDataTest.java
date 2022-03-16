@@ -13,7 +13,7 @@ public class ReadDataTest
 	public void read()
 	{
 		String BROWSER = System.getProperty("browser");
-		System.out.println(BROWSER);
+		System.out.println("browser----->"+BROWSER);
 		
 		WebDriver driver = null;
 		if(BROWSER.equalsIgnoreCase("chrome"))
