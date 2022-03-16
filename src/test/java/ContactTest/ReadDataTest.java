@@ -24,6 +24,7 @@ public class ReadDataTest
 		{
 			driver = new FirefoxDriver();
 		}
+		driver.get("http://localhost:8888");
 		
 		
 		String URL = System.getProperty("url");
